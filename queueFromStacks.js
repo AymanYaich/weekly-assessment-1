@@ -24,5 +24,25 @@ class Stack {
 ////////////////////////////////////////////////////////////
 
 class Queue {
+  constructor () {
+    this.data=[];
+    
+ 
+
+  }
+
+  enqueue (record){
+    this.data.unshift(record)
+   
+  }
+
+  dequeue (){
+    return this.data.pop()
+
+  }
+  peek(){
+    return this.data[0] // function peek return the first element added to a database in case of Queue or fifo, the first element takes the index zero of data array.
+  }
+
 
 }
